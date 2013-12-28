@@ -891,4 +891,7 @@ ifneq ($(CUSTOM_BUILD),)
 $(eval include vendor/six/sepolicy/sepolicy.mk)
 endif
 
+# Rules for QCOM targets
+include $(BUILD_SYSTEM)/qcom_target.mk
+
 include $(BUILD_SYSTEM)/dumpvar.mk
