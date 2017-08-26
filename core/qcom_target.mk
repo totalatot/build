@@ -19,3 +19,6 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
         endif
     endif
 endif
+ifeq ($(call is-board-platform-in-list, $(QCOM_BOARD_PLATFORMS)),true)
+    -include vendor/qcom/perf/BoardConfigVendor.mk
+endif
