@@ -25,11 +25,11 @@ PRODUCT_PACKAGES := \
 
 # Additional settings used in all AOSP builds
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.config.ringtone=Zen.ogg \
-    ro.config.notification_sound=Chime.ogg
+    ro.config.ringtone=Rrrring.ogg \
+    ro.config.notification_sound=Hey.ogg
 
 # Put en_US first in the list, so make it default.
-PRODUCT_LOCALES := en_US
+PRODUCT_LOCALES := zh_CN
 
 # Get some sounds
 $(call inherit-product-if-exists, frameworks/base/data/sounds/GoogleAudio.mk)
